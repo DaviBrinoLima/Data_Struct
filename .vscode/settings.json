@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "Soma_Pares.C": "cpp"
+        "Soma_Pares.C": "cpp",
+        "Exec_Soma_Pares.C": "cpp"
     }
 }
