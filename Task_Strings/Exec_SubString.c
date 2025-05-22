@@ -10,21 +10,21 @@ int main(void) {
 
     printf("Insira a primeira string: ");
     fgets(string_1, 1500000, stdin);
-    len_1 = strlen(string_1);
+    len_1 = strlen(string_1)-1;
 
 
     printf("Insira a segunda string: ");
     fgets(string_2, 1500000, stdin);
-    len_2 = strlen(string_2);
+    len_2 = strlen(string_2)-1;
 
 
     aux = strstr(string_1, string_2);
 
     if (aux != NULL) {
-    printf("\nA substring %s foi encontrada em: %s\n", string_2, string_1);
+    printf("\nA substring '%.*s' foi encontrada em: '%.*s'\n", (len_2), string_2, (len_1), string_1);
     } 
 
     else {
-    printf("\nA substring %s não foi encontrada em: %s\n", string_2, string_1);
+    printf("\nA substring '%.*s' não foi encontrada em: '%.*s'\n", (len_2), string_2, (len_1), string_1);
     }
 }

@@ -2,30 +2,23 @@
 
 int main(void) {
     int num_primos[1500000] = {2,3,5,7};
-    int i,u,j,aux_indice;
+    int u,j, i=4;
+
 
     int n;
     printf("Insira o valor limite do intervalo analisado: ");
     scanf("%d", &n);
 
 
-    for (i=4; i<=1500000; i++) {
-        for (j= (num_primos[i-1]+1); j<=n; j++){
-           if ((j%2 !=0) && (j%3 != 0) && (j%5 != 0) && (j%7 !=0)) {
-            break;
-           } 
-        }
-
-        if(j > n) {
-            aux_indice = i-1;
-            break;
-        }
-
+    for (j =8; j<=n; j++){
+        if ((j%2 !=0) && (j%3 != 0) && (j%5 != 0) && (j%7 !=0)) {
         num_primos[i] = j;
+        i++;
+           } 
     }
 
 
-   for (u=0; u<=aux_indice; u++) {
+    for (u=0; u<=i-1; u++) {
         printf("%d, ", num_primos[u]);
    }
 
