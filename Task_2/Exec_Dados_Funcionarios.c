@@ -1,17 +1,16 @@
 #include <stdio.h>
 
-
-int main(void) {
-    typedef struct Funcionario
+struct funcionario
     {
       int codigo, idade;
       float salario;
       char sexo;
     };
-    
 
+
+int main(void) {
     int cont = 0, flag = 1;
-    Funcionario empresa[200];
+    struct funcionario empresa[200];
 
 
     while(1) {
