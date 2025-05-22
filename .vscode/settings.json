@@ -2,6 +2,7 @@
     "files.associations": {
         "Soma_Pares.C": "cpp",
         "Exec_Soma_Pares.C": "cpp",
-        "Exec_Decomposicao.C": "cpp"
+        "Exec_Decomposicao.C": "cpp",
+        "Exec_Dados_Funcionarios.C": "cpp"
     }
 }

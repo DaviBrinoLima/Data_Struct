@@ -2,11 +2,11 @@
 #include <string.h>
 
 int main(void) {
-    char string[1000];
+    char string[1500000];
 
 
     printf("Insira a String a ser operada: ");
-    fgets(string,1000,stdin);
+    fgets(string,1500000,stdin);
 
     int len_frase = strlen(string);
 

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-    int num_primos[1500] = {2,3,5,7};
+    int num_primos[1500000] = {2,3,5,7};
     int i,u,j,aux_indice;
 
     int n;
@@ -9,7 +9,7 @@ int main(void) {
     scanf("%d", &n);
 
 
-    for (i=4; i<=1500; i++) {
+    for (i=4; i<=1500000; i++) {
         for (j= (num_primos[i-1]+1); j<=n; j++){
            if ((j%2 !=0) && (j%3 != 0) && (j%5 != 0) && (j%7 !=0)) {
             break;
